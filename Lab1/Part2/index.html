@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Color Range</title>
+</head>
+<body>
+
+    <div>
+        <label for="redRange" style="color: red; font-weight: bold;" >Red:</label>
+        <input type="range" id="redRange" min="0" max="255" value="0" step="1">
+    </div>
+
+    <div>
+        <label for="greenRange" style="color: green; font-weight: bold;">Green:</label>
+        <input type="range" id="greenRange" min="0" max="255" value="0" step="1">
+    </div>
+        
+    <div>
+        <label for="blueRange" style="color: blue; font-weight: bold;">Blue:</label>
+        <input type="range" id="blueRange" min="0" max="255" value="0" step="1">
+    </div>
+
+    <div class="colorful-text" id="displayText">Change The 3 Coors Ranges Above And Observe My Color Change</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

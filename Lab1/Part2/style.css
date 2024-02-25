@@ -1,0 +1,18 @@
+.colorful-text {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.display-color {
+    width: 50px;
+    height: 30px;
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+.color-box {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}

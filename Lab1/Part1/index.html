@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player Controls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video id="myVideo" width="640" height="360">
+    <source src="pexels-ambientnature-atmosphere-5948574 (2160p).mp4" type="video/mp4">
+</video>
+
+<div>
+    <input type="range" id="seekBar" value="0" step="1" max="100" onchange="seekVideo()">
+    <span id="timer">0:00 / 0:00</span>
+</div>
+
+<div class="controls">
+    <button id="playPauseButton" onclick="togglePlayPause()">Play</button>
+    <button id="muteButton" onclick="toggleMute()">Mute</button>
+    <button onclick="changeVolume('down')">-</button>
+    <button onclick="changeVolume('up')">+</button>
+    <button onclick="changeSpeed(2)">2x</button>
+    <button onclick="changeSpeed(1)">Normal</button>
+    <button onclick="rewind()">&lt&lt</button>
+    <button onclick="fastForward()">&gt&gt</button>
+    <button onclick="toggleFullScreen()">[ ]</button>
+</div>
+
+<div>
+
+    <input type="range" id="volumeBar" value="100" step="1" max="100" onchange="changeVolume('custom')">
+</div>
+
+<script src="script.js">
+    
+</script>
+
+</body>
+</html>

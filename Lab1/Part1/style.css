@@ -1,0 +1,19 @@
+#seekBar{
+    width: 640px;
+}
+
+button{
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    width: 60px;
+    border-radius: 5px;
+}
+
+video{
+    border-radius: 10px;
+}
+body{
+    background-color: antiquewhite;
+}
