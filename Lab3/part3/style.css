@@ -1,62 +1,104 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-  }
-  
-  .card {
-    width: 200px;
-    height: 300px;
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 10px;
-    position: relative;
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+}
 
-.heart{
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    transform: rotate(180deg);
-    margin-top: 50px;
-  }
-  .heart:before,
-  .heart:after {
-    position: absolute;
-    content: "";
-    left: 50px;
-    top: 0;
-    width: 50px;
-    height: 80px;
-    background: red;
-    border-radius: 50px 50px 0 0;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-  }
-  .heart:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
-  }
+#hearts {
+  position: relative;
+  height: 500px;
+  width: 350px;
+  background-color: gray;
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 10%;
+  margin-bottom: 30px;
+}
 
-  
-  
-  .triangle {
-    width:0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid red;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    margin-top: 85px;
-  }
-  
+#spade {
+  font-size: 90px;
+  margin: auto;
+}
+
+.center {
+  position: relative;
+  top: 100px;
+}
+
+.left {
+  left: 25px;
+  top: 90px;
+}
+
+.right {
+  transform: rotate(-180deg);
+  left: 290px;
+  top: 395px;
+}
+
+#ace-left {
+  position: relative;
+  font-size: 45px;
+  top: -15px;
+  left: -135px;
+  color: white;
+}
+
+
+#ace-right {
+  position: absolute;
+  font-size: 45px;
+  top: 435px;
+  left: 290px;
+  transform: rotate(-180deg);
+  color: white;
+}
+
+
+
+.shape {
+  transform: rotate(180deg);
+}
+
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
+.tale {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 20px solid red;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 20px;
+  right: -3px
+}
